@@ -303,7 +303,6 @@
 .form-field .input:focus {
   outline: none;
   border-color: var(--focus-color);
-  /* outline-offset: -1px; */
 }
 
 .form-field .input:hover ~ .icon,
