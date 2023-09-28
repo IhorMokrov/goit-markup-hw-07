@@ -1,20 +1,18 @@
 /* Logo */
 
 .logo {
+  display: flex;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  //   color: var(--focus-color);
   color: $focus-color;
 }
 
-.logo--black {
-  //   color: var(--logo-black);
+.logo__text--black {
   color: $logo-black;
 }
 
-.logo--white {
-  //   color: var(--logo-white);
+.logo__text--white {
   color: $logo-white;
 }
