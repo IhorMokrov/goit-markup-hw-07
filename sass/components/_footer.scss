@@ -1,0 +1,45 @@
+/* Footer */
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $footer-bg-color;
+}
+
+.footer__container {
+  display: flex;
+}
+
+// Contacts
+
+.footer-contacts__address {
+  margin-top: 20px;
+}
+
+.address__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.71;
+  color: $focus-text-color;
+}
+
+// Footer Contacts
+.address__contacts {
+  @extend %list;
+  margin-top: 9px;
+  line-height: 0;
+}
+
+.address__link {
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+
+  transition: color 250ms $cubic-animation, fill 250ms $cubic-animation;
+
+  &:hover,
+  &:focus {
+    color: $focus-color;
+    fill: $focus-color;
+  }
+}
