@@ -22,16 +22,11 @@
 }
 
 .nav-container {
-  @extend .container;
   @include flex-center();
   height: 80px;
-
-  background-color: red;
-  color: red;
-  outline: 10px solid red;
 }
 
-.nav {
+.navigation {
   display: flex;
   align-items: center;
   height: inherit;

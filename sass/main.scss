@@ -1,5 +1,6 @@
 @import "./base/normalize";
 @import "./fonts/fonts";
+@import "./utilites/mixins";
 @import "./utilites/placeholders";
 @import "./variables/variables";
 @import "./base/common";
@@ -7,4 +8,4 @@
 @import "./components/container";
 @import "./components/page-header";
 @import "./components/logo";
-@import "./components/navigator";
+@import "./components/navigation";
