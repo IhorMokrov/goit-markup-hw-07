@@ -470,34 +470,6 @@
   line-height: 1.19;
 }
 
-.social-list {
-  display: flex;
-  margin-bottom: 30px;
-}
-
-.social-list .social-item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.social-list .link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  fill: var(--icon-inactive);
-  border-radius: 50% 50%;
-
-  transition: background-color 250ms var(--cubic-animation),
-    fill 250ms var(--cubic-animation);
-}
-
-.social-list .link:hover,
-.social-list .link:focus {
-  background-color: var(--focus-color);
-  fill: var(--focus-text-color);
-}
-
 /* Regular customers */
 
 .customers {
