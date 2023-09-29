@@ -1,77 +1,16 @@
-/* Hero */
-.hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  text-align: center;
-}
-
-.overlay {
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.5),
-      rgba(47, 48, 58, 0.5)
-    ),
-    url(../images/hero-background.jpg);
-  background-color: #c4c4c4;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.hero-title {
-  margin-top: 0;
-  margin-bottom: 30px;
-
-  font-size: 44px;
-  font-weight: 900;
-  color: var(--focus-text-color);
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.button {
+/* DIDNT FIND */
+/* .button {
   font-family: inherit;
-  color: var(--inactive-black);
+  color: $inactive-black;
   cursor: pointer;
 
-  background-color: var(--button-grey);
+  background-color: $button-grey;
   border: none;
   border-radius: 4px;
 
-  transition: color 250ms var(--cubic-animation),
-    background-color 250ms var(--cubic-animation);
-}
-
-.hero-button {
-  padding: 10px 32px;
-
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: var(--focus-text-color);
-  cursor: pointer;
-
-  background-color: var(--focus-color);
-  border: none;
-  border-radius: 4px;
-
-  transition: color 250ms var(--cubic-animation),
-    background-color 250ms var(--cubic-animation);
-}
-
-.hero-button:hover,
-.hero-button:focus {
-  color: var(--inactive-black);
-  background-color: var(--button-grey);
-}
+  transition: color 250ms $cubic-animation,
+    background-color 250ms $cubic-animation;
+} */
 
 .backdrop {
   position: fixed;
@@ -92,238 +31,6 @@
   pointer-events: none;
 }
 
-.backdrop.is-hidden .modal {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1.1);
-}
-
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-
-  width: 528px;
-  height: 581px;
-
-  background-color: var(--primary-white);
-  border-radius: 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-form {
-  padding: 40px;
-}
-
-.modal-headline {
-  margin-top: 0;
-  margin-bottom: 12px;
-  color: var(--inactive-black);
-  text-align: center;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: normal;
-}
-
-.modal-form .form-field {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.form-field .label-text {
-  font-size: 12px;
-  line-height: normal;
-  letter-spacing: 0.01em;
-  color: var(--main-text-color);
-}
-
-.form-field .input-container {
-  position: relative;
-  width: 100%;
-  margin-top: 4px;
-  margin-bottom: 10px;
-}
-
-.form-field .input:hover,
-.form-field .input:focus {
-  outline: none;
-  border-color: var(--focus-color);
-}
-
-.form-field .input:hover ~ .icon,
-.form-field .input:focus ~ .icon {
-  fill: var(--focus-color);
-}
-
-.input-container .icon {
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  transform: translateY(-50%);
-  fill: var(--inactive-black);
-
-  transition: fill 250ms var(--cubic-animation);
-}
-
-.form-field .input {
-  width: 100%;
-  height: 40px;
-  padding-left: 42px;
-
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-
-  transition: border-color 250ms var(--cubic-animation);
-}
-
-.input.textarea {
-  width: 448px;
-  height: 120px;
-  padding: 12px 16px;
-  margin-top: 4px;
-  margin-bottom: 25px;
-  resize: none;
-}
-
-.input.textarea::placeholder {
-  color: rgba(117, 117, 117, 0.5);
-  font-size: 12px;
-  letter-spacing: 0.12px;
-}
-
-.modal-agree {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.icon-checkbox-container {
-  position: relative;
-  display: flex;
-  /* overflow: hidden; */
-  /* outline: 2px solid tomato; */
-}
-
-.modal-agree .icon-checkbox-checked {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  /* outline: 2px solid green; */
-
-  transition: opacity 250ms var(--cubic-animation);
-}
-
-.modal-agree
-  .checkbox:checked
-  ~ .icon-checkbox-container
-  .icon-checkbox-checked {
-  opacity: 1;
-}
-
-.modal-agree .checkbox ~ .icon-checkbox-container .icon-checkbox {
-  opacity: 1;
-  transition: opacity 250ms var(--cubic-animation);
-}
-
-.modal-agree .checkbox:checked ~ .icon-checkbox-container .icon-checkbox {
-  opacity: 0;
-}
-
-.modal-agree .checkbox {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.modal-agree .text {
-  margin-left: 8px;
-
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.42px;
-}
-
-.modal-agree .link {
-  position: relative;
-  color: var(--focus-color);
-}
-
-.modal-agree .link::after {
-  position: absolute;
-  bottom: 1px;
-  left: 0;
-
-  display: block;
-  width: 100%;
-  height: 1px;
-
-  background-color: var(--focus-color);
-  content: "";
-}
-
-.modal-submit {
-  display: block;
-  width: 200px;
-  height: 50px;
-  padding: 0;
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-
-  color: var(--primary-white);
-  font-weight: 700;
-  line-height: 1.88;
-  letter-spacing: 0.96px;
-
-  background-color: var(--focus-color);
-  border: 0;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  transition: box-shadow 250ms var(--cubic-animation);
-}
-
-.modal-submit:hover {
-  cursor: pointer;
-  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.15);
-}
-
-.button-close {
-  position: absolute;
-  top: 0;
-  right: 0;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  padding: 0;
-  margin-top: 8px;
-  margin-right: 8px;
-
-  fill: #000000;
-  background-color: var(--primary-white);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50% 50%;
-}
-
-.button-close:hover,
-.button-close:focus {
-  fill: var(--focus-color);
-  border-color: var(--focus-color);
-}
-
 .portfolio-buttons-list .portfolio-button {
   padding: 6px 22px;
 
@@ -335,8 +42,8 @@
 
 .button:hover,
 .button:focus {
-  color: var(--focus-text-color);
-  background-color: var(--focus-color);
+  color: $focus-text-color;
+  background-color: $focus-color;
   border: none;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -364,7 +71,7 @@
   font-size: 14px;
   text-transform: uppercase;
   background-color: rgba(47, 48, 58, 0.8);
-  color: var(--focus-text-color);
+  color: $focus-text-color;
 }
 
 /* Features */
@@ -385,18 +92,18 @@
   justify-content: center;
   margin-bottom: 30px;
   height: 120px;
-  background-color: var(--button-grey);
+  background-color: $button-grey;
   border-radius: 4px;
 }
 
 .features-image {
-  fill: var(--inactive-black);
+  fill: $inactive-black;
 }
 
 .features .title {
   margin-bottom: 10px;
   text-transform: uppercase;
-  color: var(--inactive-black);
+  color: $inactive-black;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -451,7 +158,7 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--inactive-black);
+  color: $inactive-black;
 }
 
 .portfolio .text {
@@ -520,12 +227,12 @@
 
   font-size: 18px;
   line-height: 1.6;
-  color: var(--focus-text-color);
+  color: $focus-text-color;
 
   background-color: rgba(33, 150, 243, 0.9);
   opacity: 1;
 
-  transition: transform 250ms var(--cubic-animation);
+  transition: transform 250ms $cubic-animation;
 }
 
 .portfolio .link:hover .text-overlay .paragraph {
@@ -544,7 +251,7 @@
   margin-top: 12px;
   font-size: 14px;
   text-transform: uppercase;
-  color: var(--focus-text-color);
+  color: $focus-text-color;
 }
 
 .subscribe-input {
@@ -573,15 +280,15 @@
   padding-left: 29px;
   padding-right: 28px;
 
-  color: var(--primary-white);
+  color: $primary-white;
   font-weight: 700;
   line-height: 1.88;
   font-weight: 700;
   letter-spacing: 0.96px;
   cursor: pointer;
 
-  background: var(--focus-color);
-  border: 1px solid var(--focus-color);
+  background: $focus-color;
+  border: 1px solid $focus-color;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
