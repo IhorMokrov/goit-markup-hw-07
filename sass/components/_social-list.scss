@@ -1,6 +1,8 @@
 // Social list
 
-// margin-bottom: 30px; !!!!!!!!!!!!!!!!!!!!!!!!
+.our-team__social-list {
+  margin-bottom: 30px;
+}
 
 .social-list {
   @extend %list;

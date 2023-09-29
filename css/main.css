@@ -461,6 +461,10 @@ a {
   fill: #2196f3;
 }
 
+.our-team__social-list {
+  margin-bottom: 30px;
+}
+
 .social-list {
   display: -webkit-box;
   display: -ms-flexbox;
