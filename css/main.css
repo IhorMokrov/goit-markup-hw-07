@@ -236,7 +236,7 @@ summary {
   display: list-item;
 }
 
-.our-team, .social-list, .address__contacts, .nav-contacts, .navigation__list {
+.customers, .our-team, .social-list, .address__contacts, .nav-contacts, .navigation__list {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -461,6 +461,26 @@ a {
   fill: #2196f3;
 }
 
+.social-container {
+  margin-left: 70px;
+}
+
+.social-container .title {
+  margin-top: 12px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--focus-text-color);
+}
+
+.social-container .social-list {
+  margin-top: 20px;
+}
+
+.social-footer .link {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--primary-white);
+}
+
 .our-team__social-list {
   margin-bottom: 30px;
 }
@@ -561,4 +581,38 @@ a {
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
+}
+
+/* Regular customers */
+.customers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.customers__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.customers__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.customers__link:hover, .customers__link:focus {
+  fill: #2196f3;
+  border-color: #2196f3;
 }/*# sourceMappingURL=main.css.map */

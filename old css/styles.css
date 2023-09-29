@@ -413,36 +413,6 @@
   line-height: 1.71;
 }
 
-/* Regular customers */
-
-.customers {
-  display: flex;
-}
-
-.customers .link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 170px;
-  height: 90px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  fill: var(--icon-inactive);
-
-  transition: fill 250ms var(--cubic-animation),
-    border-color 250ms var(--cubic-animation);
-}
-
-.customers .link:hover,
-.customers .link:focus {
-  fill: var(--focus-color);
-  border-color: var(--focus-color);
-}
-
-.customers .item:not(:last-child) {
-  margin-right: 30px;
-}
-
 /* Portfolio */
 
 .is-hidden.portfolio-title {
@@ -560,28 +530,6 @@
 
 .portfolio .link:hover .text-overlay .paragraph {
   transform: translateY(-100%);
-}
-
-/* Social */
-
-.social-container {
-  margin-left: 70px;
-}
-
-.social-container .title {
-  margin-top: 12px;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: var(--focus-text-color);
-}
-
-.social-container .social-list {
-  margin-top: 20px;
-}
-
-.social-footer .link {
-  background-color: rgba(255, 255, 255, 0.1);
-  fill: var(--primary-white);
 }
 
 .subscribe-container {
