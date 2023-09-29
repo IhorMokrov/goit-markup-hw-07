@@ -17,17 +17,6 @@
   }
 }
 
-// .backdrop.is-hidden {
-//   opacity: 0;
-//   pointer-events: none;
-// }
-
-.backdrop.is-hidden .modal {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1.1);
-}
-
 .modal {
   position: absolute;
   top: 50%;
@@ -43,6 +32,12 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .backdrop.is-hidden & {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
 }
 
 .modal__form {
