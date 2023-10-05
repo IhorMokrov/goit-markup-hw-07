@@ -932,7 +932,7 @@ a {
   border-color: #2196f3;
 }
 
-.visually-hidden {
+.visually-hidden, section__title--visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;

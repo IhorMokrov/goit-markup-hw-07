@@ -1,5 +1,4 @@
-/* DIDNT FIND */
-/* .button {
+.button {
   font-family: inherit;
   color: $inactive-black;
   cursor: pointer;
@@ -10,7 +9,7 @@
 
   transition: color 250ms $cubic-animation,
     background-color 250ms $cubic-animation;
-} */
+}
 
 .portfolio-buttons-list .portfolio-button {
   padding: 6px 22px;
@@ -56,11 +55,6 @@
 }
 
 /* Features */
-.is-hidden.section-title {
-  margin: 0;
-  padding: 0;
-  font-size: 0;
-}
 
 .features {
   display: flex;
