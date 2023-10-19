@@ -2,6 +2,7 @@
 @import "./fonts/fonts";
 @import "./utilites/mixins";
 @import "./utilites/placeholders";
+@import "./utilites/visually-hidden";
 @import "./variables/variables";
 @import "./base/common";
 @import "./base/reset";
@@ -16,5 +17,5 @@
 @import "./components/footer";
 @import "./components/hero";
 @import "./components/modal";
-@import "./utilites/visually-hidden";
+
 @import "./components/features";
