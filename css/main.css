@@ -236,7 +236,7 @@ summary {
   display: list-item;
 }
 
-.address__contacts, .customers, .our-team, .social-list, .nav-contacts, .navigation__list {
+.our-activities, .features, .address__contacts, .customers, .our-team, .social-list, .nav-contacts, .navigation__list {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -941,4 +941,89 @@ a {
 .button-close:hover, .button-close:focus {
   fill: #2196f3;
   border-color: #2196f3;
+}
+
+/* Features */
+.features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container__features {
+  margin-bottom: 94px;
+}
+
+.features__image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.features__image {
+  fill: #212121;
+}
+
+.features__title {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #212121;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.features__text {
+  margin: 0;
+  width: 270px;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.our-activities {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.our-activities__item {
+  position: relative;
+  line-height: 0;
+}
+
+.our-activities__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 70px;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: #ffffff;
 }/*# sourceMappingURL=main.css.map */
