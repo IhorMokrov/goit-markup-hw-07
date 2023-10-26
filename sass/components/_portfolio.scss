@@ -1,15 +1,4 @@
-.button {
-  font-family: inherit;
-  color: $inactive-black;
-  cursor: pointer;
-
-  background-color: $button-grey;
-  border: none;
-  border-radius: 4px;
-
-  transition: color 250ms $cubic-animation,
-    background-color 250ms $cubic-animation;
-}
+/* Portfolio */
 
 .portfolio-buttons-list .portfolio-button {
   padding: 6px 22px;
@@ -28,8 +17,6 @@
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-
-/* Portfolio */
 
 .is-hidden.portfolio-title {
   margin: 0;

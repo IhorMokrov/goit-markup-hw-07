@@ -123,12 +123,15 @@
 }
 
 .modal__agreement {
+  position: relative;
   @include flex-center();
   justify-content: center;
 }
 
 .modal__icon-checkbox {
-  position: relative;
+  position: absolute;
+  top: 5px;
+  left: 10px;
   display: flex;
 }
 
