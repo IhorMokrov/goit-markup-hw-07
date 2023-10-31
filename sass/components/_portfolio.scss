@@ -137,9 +137,3 @@
   border-style: solid;
   border-color: #eeeeee;
 }
-
-@each $animal in cat, frog, dog {
-  $animal-icon: {
-    background-color: red;
-  }
-}
